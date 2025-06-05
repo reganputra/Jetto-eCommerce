@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "JettoCommerce"
 include(":app")
+include(":feature:auth")

@@ -43,6 +43,7 @@ dependencies {
 
     // Modules
     implementation(project(":core:ui"))
+    implementation(project(":feature:auth"))
 
 
     implementation(libs.androidx.core.ktx)

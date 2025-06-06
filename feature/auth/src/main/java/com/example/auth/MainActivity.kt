@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
             JettoCommerceTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
-                        name = "Android",
+                        name = "Regan",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }

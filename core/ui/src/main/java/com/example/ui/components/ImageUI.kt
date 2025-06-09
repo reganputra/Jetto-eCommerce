@@ -14,24 +14,26 @@ import androidx.compose.ui.unit.dp
 
 
 @Composable
-fun JettoImageViewClick(
+fun ImageViewClick(
+    modifier: Modifier = Modifier.size(24.dp),
     onClick: () -> Unit = { /* No-op */ },
     color: Color = Color.White,
     imageVector: ImageVector = Icons.Default.ArrowBack,
     imageDescription: String = "Back",
-    modifier: Modifier = Modifier.size(24.dp)
+
 ) {
     IconButton(onClick = {onClick()}) {
         Icon(
-            imageVector = Icons.Default.ArrowBack,
+            imageVector = imageVector,
             contentDescription = imageDescription,
-            modifier = modifier
+            modifier = modifier,
+            tint = color
         )
     }
 }
 
 @Preview
 @Composable
-fun JettoImageViewClickPreview() {
-    JettoImageViewClick()
+fun ImageViewClickPreview() {
+    ImageViewClick()
 }

@@ -67,6 +67,7 @@ fun ClickableText(){
     Text(
         text = annotedText
     )
+
 }
 
 @Preview(showBackground = true)
